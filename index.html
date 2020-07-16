@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    </link>
+</head>
+
+<body>
+    <form id="signUp">
+        <div class="container1">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="font-weight-bold text-white  ">USERNAME</label>
+                <input type="email" class="form-control form-control-lg rounded-lg border-info" id="UserName"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="font-weight-bold text-white ">PASSWORD</label>
+                <input type="email" class="form-control form-control-lg rounded-lg border-info" id="PassWord"
+                    aria-describedby="emailHelp">
+            </div>
+            <button type="button" class="btn btn-primary" id="signIn" onclick="getQuesForm()">Sign In</button>
+        </div>
+    </form>
+
+    <div class="container2">
+        <div class="container-ques">
+            <div class="question">
+                <h3 class="quesBody">question1</h3>
+            </div>
+            <div class="label-answer">answers:</div>
+            <div class="answer">
+                <input type="radio" name="select" class="ans" data-active="1"><span class="ans1"></span>
+                <input type="radio" name="select" class="ans" data-active="2"><span class="ans2"></span>
+                <input type="radio" name="select" class="ans" data-active="3"><span class="ans3"></span>
+                <input type="radio" name="select" class="ans" data-active="4"><span class="ans4"></span>
+            </div>
+            <div class="slider">
+                <button class="btnPrev">prev</button>
+                <span class="cell" id="q-0" data-active="0">1</span>
+                <span class="cell" id="q-1" data-active="1">2</span>
+                <span class="cell" id="q-2" data-active="2">3</span>
+                <span class="cell" id="q-3" data-active="3">4</span>
+                <span class="cell" id="q-4" data-active="4">5</span>
+                <button class="btnNext">Next</button>
+            </div>
+            <div class="res">
+                <button class="mark">Mark</button>
+                <button class="score">score</button>
+            </div>
+        </div>
+
+        <div class="container-mark">
+            <div class="mark">
+                <span class="span-mark" style="display: inline-block;">Marked Question</span>
+                <span class="marked-question" style="display: block;"></span>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
